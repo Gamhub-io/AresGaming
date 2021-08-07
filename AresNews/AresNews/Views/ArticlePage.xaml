@@ -47,7 +47,7 @@
                         <ColumnDefinition Width="250" />
                         <ColumnDefinition Width="auto" />
                     </Grid.ColumnDefinitions>
-                    <Label Text="{Binding SelectedArticle.Source.Name}"
+                    <Label Text="{Binding SelectedArticle.SourceName}"
                            VerticalOptions="Center"
                            FontSize="20"
                            HorizontalOptions="Center"
