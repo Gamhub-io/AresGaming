@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -147,7 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AresNews\AresNews.csproj">
-      <Project>{7EA5A214-5361-475F-8610-8C539BE0FA4A}</Project>
+      <Project>{723D4A2D-C16E-4EF3-B83E-1E135B7F6308}</Project>
       <Name>AresNews</Name>
     </ProjectReference>
   </ItemGroup>

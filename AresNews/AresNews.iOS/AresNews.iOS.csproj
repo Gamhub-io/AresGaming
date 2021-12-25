@@ -38,6 +38,8 @@
     <WarningLevel>4</WarningLevel>
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
+    <CodesignProvision>aresDist</CodesignProvision>
+    <CodesignKey>iPhone Distribution: Brice Friha (2J7ZRPFMY9)</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,12 +66,15 @@
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LocalServ|iPhoneSimulator'">
     <OutputPath>bin\iPhoneSimulator\LocalServ\</OutputPath>
+    <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'LocalServ|iPhone'">
     <OutputPath>bin\iPhone\LocalServ\</OutputPath>
+    <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Android Bundle|iPhoneSimulator'">
     <OutputPath>bin\iPhoneSimulator\Android Bundle\</OutputPath>
@@ -79,6 +84,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <LangVersion>7.3</LangVersion>
     <ErrorReport>prompt</ErrorReport>
+    <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Android Bundle|iPhone'">
     <OutputPath>bin\iPhone\Android Bundle\</OutputPath>
@@ -88,6 +94,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <LangVersion>7.3</LangVersion>
     <ErrorReport>prompt</ErrorReport>
+    <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -174,7 +181,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\AresNews\AresNews.csproj">
-      <Project>{7EA5A214-5361-475F-8610-8C539BE0FA4A}</Project>
+      <Project>{723D4A2D-C16E-4EF3-B83E-1E135B7F6308}</Project>
       <Name>AresNews</Name>
     </ProjectReference>
   </ItemGroup>
